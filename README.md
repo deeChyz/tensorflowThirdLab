@@ -1,38 +1,23 @@
-[![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://raw.githubusercontent.com/AlexanderSoroka/CNN-XRay.git/master/LICENSE.md)
+TensorFlowThirdLab
 
-# X-Ray chest images classification
+### 1st Stage
 
-The goal of that lab is to create CNN that classifies x-ray chest images
+В первом коммите в файле train.py лежит код для обучения сверточной сети VGG16. Добавлены все требуемые слои и получены следующие результаты: 
 
-Pre-requisites:
-1. TensorFlow 1.14 environment
+## train, Метрика точности
 
-Steps to reproduce results:
-1. Clone the repository:
-```
-git clone git@github.com:AlexanderSoroka/CNN-XRay.git
-```
-2. Download [Kaggle chest xray pneumonia](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) and unpack it
-3. Generate TFRecords with build_image_data.py script:
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/1stStageGraphics/train_acc.jpg)
 
-```
-python build_image_data.py --input /work/datasets/chest_xray/ --output /tmp/xray
-```
+## train, Функция потерь
 
-Validate that total size of generated tfrecord files is close ot original dataset size
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/1stStageGraphics/train_loss.jpg)
 
-4. Run train.py to train pre-defined CNN:
-```
-python train.py --train '/tmp/xray/train*' --test '/tmp/xray/test*
-```
+## ************************************************************************************************************
 
-5. Modify model and have fun
+## test, Метрика точности
 
-### [License](https://raw.githubusercontent.com/AlexanderSoroka/CNN-ArtWorks/master/LICENSE.md)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/1stStageGraphics/val_acc.jpg)
 
-Copyright (C) 2020 Alexander Soroka.
+## test, Функция потерь
 
-All rights reserved.
-Licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) (**Attribution-NonCommercial-ShareAlike 4.0 International**)
-
-The code is released for academic research use only. For commercial use, please contact [soroka.a.m@gmail.com](soroka.a.m@gmail.com).
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/1stStageGraphics/val_loss.jpg)
