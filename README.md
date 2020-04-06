@@ -54,7 +54,7 @@ TensorFlowThirdLab
 
 ### 3nd Stage
 
-Во третьем коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/a23a317614a69f925d6452b894b0d7ef683f7372) в файле train.py лежит код для обучения сети. Все слоя разморожены.
+Во третьем коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/b2c46f0d0121463440b342983da8cc81ab72866d) в файле train.py лежит код для обучения сети. Все слоя разморожены.
 
 ## train, Метрика точности
 
@@ -68,11 +68,11 @@ TensorFlowThirdLab
 
 ## test, Метрика точности
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/val_acc.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/var_acc.jpg)
 
 ## test, Функция потерь
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/val_loss.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/var_loss.jpg)
 
 
 ### **************************************************
