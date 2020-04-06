@@ -28,7 +28,7 @@ TensorFlowThirdLab
 
 ### 2nd Stage
 
-Во втором коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/a23a317614a69f925d6452b894b0d7ef683f7372) в файле train.py лежит код для обучения классификатора. Все происходило при замороженной сети, полученной на первом этапе.
+Во втором коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/a23a317614a69f925d6452b894b0d7ef683f7372) в файле train.py лежи код для обучения классификатора.
 
 ## train, Метрика точности
 
