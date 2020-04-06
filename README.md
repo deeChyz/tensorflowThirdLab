@@ -28,7 +28,7 @@ TensorFlowThirdLab
 
 ### 2nd Stage
 
-Во втором коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/a23a317614a69f925d6452b894b0d7ef683f7372) в файле train.py лежи код для обучения классификатора.
+Во втором коммите (https://github.com/deeChyz/tensorflowThirdLab/commit/a23a317614a69f925d6452b894b0d7ef683f7372) в файле train.py лежи код с уже обученной vgg16 на imagenet и подобранными под нашу задачу параметрами классификатора.
 
 ## train, Метрика точности
 
