@@ -58,18 +58,45 @@ TensorFlowThirdLab
 
 ## train, Метрика точности
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/2ndStageGraphics/train_acc.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/train_acc.jpg)
 
 ## train, Функция потерь
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/2ndStageGraphics/train_loss.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/train_loss.jpg)
 
 ## *************
 
 ## test, Метрика точности
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/2ndStageGraphics/val_acc.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/val_acc.jpg)
 
 ## test, Функция потерь
 
-![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/2ndStageGraphics/val_loss.jpg)
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/3rdStageGraphics/val_loss.jpg)
+
+
+### **************************************************
+
+
+### Объедененные графики. 
+
+## Синий - замороженная, красный - размороженная
+
+
+## train, Метрика точности
+
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/ConcatGraphics/train_acc.jpg)
+
+## train, Функция потерь
+
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/ConcatGraphics/train_loss.jpg)
+
+## *************
+
+## test, Метрика точности
+
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/ConcatGraphics/var_acc.jpg)
+
+## test, Функция потерь
+
+![Image alt](https://github.com/deeChyz/tensorflowThirdLab/blob/master/ConcatGraphics/var_loss.jpg)
