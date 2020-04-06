@@ -13,6 +13,7 @@ import tensorflow as tf
 import time
 from tensorflow.python import keras as keras
 from tensorflow.python.keras.callbacks import LearningRateScheduler
+from keras.models import load_model
 
 
 LOG_DIR = 'logs'
@@ -87,13 +88,10 @@ class Validation(tf.keras.callbacks.Callback):
  
 
 def build_model():
-    base_model = tf.keras.applications.VGG16(include_top=False, weights='imagenet', input_shape=(224,224,3), classes=2)
-    base_model.trainable = False
-    return tf.keras.models.Sequential([
-    	base_model,
-        tf.keras.layers.Flatten(),
-        tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)
-    ])
+    model = keras.models.load_model('mymodel.h5')
+    for layer in model.layers:
+        layer.trainable = True
+    return model
      
 
 def main():
@@ -118,14 +116,13 @@ def main():
     log_dir='{}/xray-{}'.format(LOG_DIR, time.time())
     model.fit(
         (train_images, train_labels),
-        epochs=50, 
+        epochs=30, 
         steps_per_epoch=int(np.ceil(TRAINSET_SIZE / float(BATCH_SIZE))),
         callbacks=[
             tf.keras.callbacks.TensorBoard(log_dir),
             Validation(log_dir, validation_files=glob.glob(args.test), batch_size=BATCH_SIZE)
         ]
     )
-    model.save('mymodel.h5')
 
 
 if __name__ == '__main__':
